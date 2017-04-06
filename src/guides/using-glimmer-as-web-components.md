@@ -1,6 +1,8 @@
 # Using Glimmer as Web Components
 
-In addition to using Glimmer for a widget on one section on a page, you can also use Glimmer components as web components. Let's do another new app setup. Instead of doing an installation like we did originally, we'll now run the following command:
+To use the components we have built so far, you will need to add an empty html tag on your external page, where you want the component to load, something like `<div id="my-component-here"></div>`. Additionaly, you will need to add a bit of JavaScript to find the tag and load your component into it. Instead of doing all that, ideally it would be great to just use `<my-component />` and eliminate the empty tag and JS setup steps. This is where Web Components come in (http://w3c.github.io/webcomponents/spec/custom/). Web Components have an enormous potential to enable us to extend the browsers limited set of tags with our own custom tags. 
+
+With Glimmer you can also create components as web components. Let's do another new app setup. Instead of doing an installation like we did originally, we'll now run the following command:
 
 ```sh
 ember new display-tile -b @glimmer/blueprint --web-component
